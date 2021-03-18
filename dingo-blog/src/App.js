@@ -1,5 +1,6 @@
 import './App.css';
 import Navbar from './Navbar'
+import Home from './Home'
 
 function App() {
   const title = 'Welcome to the dingo blog, mate';
@@ -10,11 +11,7 @@ function App() {
     <div className="App">
       <Navbar />
       <div className="content">
-        <h1>
-          {title}
-          <p>Liked {likes} different variations of dingo</p>
-        </h1>
-        <p>{"Big Dingos"}</p>
+        <Home />
         <p>{Math.random() * 10}</p>
         <a href={link}>Dingo Link</a>
       </div>
