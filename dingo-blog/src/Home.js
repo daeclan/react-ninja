@@ -7,9 +7,10 @@ const Home = () => {
     { title: 'Dingo 2', body: 'lorem ipsum', author: 'doskus', id: 2 },
     { title: 'Dingo 3', body: 'lorem ipsum', author: 'dungo', id: 3 }
   ])
+
   return (
     <div className="home">
-      <BlogList blogs={blogs} />
+      <BlogList blogs={blogs} title="All Blog Posts" />
     </div>
   );
 }
