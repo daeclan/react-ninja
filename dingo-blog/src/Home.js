@@ -8,6 +8,8 @@ const Home = () => {
     { title: 'Dingo 3', body: 'lorem ipsum', author: 'dingiooo', id: 3 }
   ])
 
+  const [name, setName] = useState('dingiooo')
+
   const handleDelete = (id) => {
     const newBlogs = blogs.filter(blog => blog.id !== id);
     setBlogs(newBlogs);
@@ -15,11 +17,14 @@ const Home = () => {
 
   useEffect(() => {
     console.log('ive run')
-  }, [])
+    console.log(name)
+  }, [name])
 
   return (
     <div className="home">
       <BlogList blogs={blogs} title="All Blog Posts" handleDelete={handleDelete} />
+      <button onClick={() => setName('doskus')}>change name</button>
+      <p>{name}</p>
     </div>
   );
 }
