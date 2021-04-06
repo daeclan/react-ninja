@@ -15,7 +15,7 @@ const Home = () => {
 
   useEffect(() => {
     console.log('ive run')
-  })
+  }, [])
 
   return (
     <div className="home">
