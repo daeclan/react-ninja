@@ -23,8 +23,8 @@ const Home = () => {
   return (
     <div className="home">
       <BlogList blogs={blogs} title="All Blog Posts" handleDelete={handleDelete} />
-      <button onClick={() => setName('doskus')}>change name</button>
-      <p>{name}</p>
+      <button onClick={() => setName('doskus')}>Change Name</button>
+      <p>Name: {name}</p>
     </div>
   );
 }
