@@ -3,9 +3,9 @@ import BlogList from './BlogList';
 
 const Home = () => {
   const [blogs, setBlogs] = useState([
-    { title: 'Dingo 1', body: 'lorem ipsum', author: 'dingiooo', id: 1 },
-    { title: 'Dingo 2', body: 'lorem ipsum', author: 'doskus', id: 2 },
-    { title: 'Dingo 3', body: 'lorem ipsum', author: 'dingiooo', id: 3 }
+    { title: 'Dingo 1', body: 'loren ipsum', author: 'dingiooo', id: 1 },
+    { title: 'Dingo 2', body: 'loren ipsum', author: 'doskus', id: 2 },
+    { title: 'Dingo 3', body: 'loren ipsum', author: 'dingiooo', id: 3 }
   ])
 
   const [name, setName] = useState('dingiooo')
@@ -16,7 +16,7 @@ const Home = () => {
   }
 
   useEffect(() => {
-    console.log('ive run')
+    console.log('ive done run')
     console.log(name)
   }, [name])
 
